@@ -24,7 +24,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <spring-boot-starter-javafx.version>1.0.14-SNAPSHOT</spring-boot-starter-javafx.version>
+        <spring-boot-starter-javafx.version>1.0.12</spring-boot-starter-javafx.version>
         <!-- LATEST 11.0.8 is not on Maven central just at https://gluonhq.com/products/javafx/ -->
         <javafx.version>11.0.2</javafx.version>
 
