@@ -93,7 +93,7 @@ public class XsdElement extends AbstractXsdElementNode {
         this.document = parent.getDocument();
         this.document.xPathStack.push(name);
         //log.debug("Creating new element: " + getXPath());
-        System.err.println("Creating new element: " + getXPath());
+        //System.err.println("Creating new element: " + getXPath());
     }
 
     /**
