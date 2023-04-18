@@ -118,13 +118,12 @@ public class XsdComparerTest {
 /************************************************************************************************/
 /* NOTE: Following compare of UBL 2.1 with UBL 2.3 will throw an out-of-memory exception!    ****/
 /************************************************************************************************/
-/*
-    private static final String UBL_2_1_XSD_PATH = XSD_DIR +  "UBL-2.1" + File.separator + "xsd" + File.separator + "maindoc" + File.separator;
-    private static final String UBL_2_3_XSD_PATH = XSD_DIR +  "UBL-2.3" + File.separator + "xsd" + File.separator + "maindoc" + File.separator;
+
+    private static final String UBL_2_1_XSD_PATH = XSD_DIR +  "UBL-2.1" + File.separator + "maindoc" + File.separator;
+    private static final String UBL_2_3_XSD_PATH = XSD_DIR +  "UBL-2.3" + File.separator + "maindoc" + File.separator;
     private static final String EMPTY_XSD_FILE_PATH = XSD_DIR + "empty.xsd";
     @Test
     /** Compares several XSDs pairs and compares the result with the saved reference. */
-    /*
     public void UBLComparisonTest() throws IOException {
 
         Boolean compareCorrect = Boolean.TRUE;
@@ -159,7 +158,7 @@ public class XsdComparerTest {
     /** Returning the correspondent UBL 2.1 file path according to the UBL 2.3 file name (or if not existent the file to an empty XSD file
      * for instance the input file name "UBL-CatalogueRequest-2.3.xsd" will look for "UBL-CatalogueRequest-2.1.xsd" in the UBL 2.1 directory.
      * */
-/*
+
     private static String xsdFilePath_ubl2_1(String xsdFileName_ubl2_3, Set fileNameSet_Ubl2_1){
         String xsdFilePath_ubl2_1 = null;
         int i = xsdFileName_ubl2_3.lastIndexOf("-2.3.xsd");
@@ -168,12 +167,10 @@ public class XsdComparerTest {
             xsdFilePath_ubl2_1 = UBL_2_1_XSD_PATH + xsdFileName_ubl2_1;
         }else{
             System.out.println("New XSD file in UBL 2.3: " + xsdFileName_ubl2_3);
-            //xsdFilePath_ubl2_1 = EMPTY_XSD_FILE_PATH;
+            xsdFilePath_ubl2_1 = EMPTY_XSD_FILE_PATH;
         }
         return xsdFilePath_ubl2_1;
     }
-
-*/
 
 
     /** Comparing two XSD grammar with a specific text report for the output*/
