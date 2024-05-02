@@ -1,7 +1,6 @@
 **** XSD COMPARISON ****
-	 old grammar: FACTUR-X_EXTENDED.xsd
-	 new grammar: Factur-X_1.0.07_EN16931_Conformant_Extended.xsd
-
+	 first/old grammar: src/test/resources/xsd/factur-x/1.0.06/FACTUR-X_EXTENDED.xsd
+	second/new grammar: src/test/resources/xsd/factur-x/Factur-X_Extended_1.0.07_draft20240106/Factur-X_1.0.07_EN16931_Conformant_Extended.xsd
 
 Added element <BatchID> {IDType}{0..*} in type {TradeProductType}
 	in SpecifiedTradeProduct at /CrossIndustryInvoice/SupplyChainTradeTransaction/IncludedSupplyChainTradeLineItem/SpecifiedTradeProduct/BatchID

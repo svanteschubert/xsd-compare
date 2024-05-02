@@ -1,7 +1,6 @@
 **** XSD COMPARISON ****
-	 old grammar: FACTUR-X_BASIC.xsd
-	 new grammar: CrossIndustryInvoice_100pD22B.xsd
-
+	 first/old grammar: src/test/resources/xsd/factur-x/1.0.06/FACTUR-X_BASIC.xsd
+	second/new grammar: src/test/resources/xsd/uncefact_22B/CrossIndustryInvoice_100pD22B.xsd
 
 Added attribute @currencyCodeListVersionID {token}{0..1} in type {AmountType}
 	in ActualAmount at /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeAllowanceCharge/ActualAmount/@currencyCodeListVersionID

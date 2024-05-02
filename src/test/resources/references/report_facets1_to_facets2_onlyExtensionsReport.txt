@@ -1,18 +1,19 @@
-In type {ChoiceSequenceChange} modifying element: 
-	old: <A1>{anyType}{0..1} in type {ChoiceSequenceChange}
-	new: <A1>{anyType}{1..1} in type {ChoiceSequenceChange}
+In type {ChoiceSequenceChangeExampleType} added @orderDate {date}{0..1} 
+In type {ChoiceSequenceChangeExampleType} modifying element: 
+	old: <A1>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A1>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}
 		Changed compositor from CHOICE to SEQUENCE
-In type {ChoiceSequenceChange} modifying element: 
-	old: <A2>{anyType}{0..1} in type {ChoiceSequenceChange}
-	new: <A2>{anyType}{0..1} in type {ChoiceSequenceChange}
+In type {ChoiceSequenceChangeExampleType} modifying element: 
+	old: <A2>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A2>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
 		Changed compositor from CHOICE to SEQUENCE
-In type {ChoiceSequenceChange} modifying element: 
-	old: <A3>{anyType}{0..1} in type {ChoiceSequenceChange}
-	new: <A3>{anyType}{1..1} in type {ChoiceSequenceChange}
+In type {ChoiceSequenceChangeExampleType} modifying element: 
+	old: <A3>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A3>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}
 		Changed compositor from CHOICE to SEQUENCE
-In type {ChoiceSequenceChange} modifying element: 
-	old: <A4>{anyType}{0..1} in type {ChoiceSequenceChange}
-	new: <A4>{anyType}{0..1} in type {ChoiceSequenceChange}
+In type {ChoiceSequenceChangeExampleType} modifying element: 
+	old: <A4>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A4>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
 		Changed compositor from CHOICE to SEQUENCE
 In type {FacetsOwner0} modifying element: 
 	old: <B1>{anyType}{1..1} in type {FacetsOwner0}
@@ -88,3 +89,5 @@ In type {FacetsOwner2} modifying element:
 	old: <sometime>{FacetsOwner2}{0..1} in type {FacetsOwner2}
 	new: <sometime>{FacetsOwner2}{0..1} in type {FacetsOwner2}
 		Changed maxExclusive from 121 to 242
+In type {FacetsOwner3} added <attributeHolderElement2> {anyType}{1..1} 
+In type {FacetsOwner3} added @min2 {int}{0..1} 

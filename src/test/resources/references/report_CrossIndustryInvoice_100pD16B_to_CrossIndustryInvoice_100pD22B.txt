@@ -1,7 +1,6 @@
 **** XSD COMPARISON ****
-	 old grammar: CrossIndustryInvoice_100pD16B.xsd
-	 new grammar: CrossIndustryInvoice_100pD22B.xsd
-
+	 first/old grammar: src/test/resources/xsd/EN16931/data/standard/CrossIndustryInvoice_100pD16B.xsd
+	second/new grammar: src/test/resources/xsd/uncefact_22B/CrossIndustryInvoice_100pD22B.xsd
 
 Added attribute @languageID {token}{0..1} in type {CodeType}
 	in CharacteristicCode at /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeDelivery/RelatedSupplyChainConsignment/UtilizedLogisticsTransportEquipment/CharacteristicCode/@languageID

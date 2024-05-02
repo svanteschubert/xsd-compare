@@ -1,7 +1,6 @@
 **** XSD COMPARISON ****
-	 old grammar: simple_anonymous1.xsd
-	 new grammar: simple_anonymous2.xsd
-
+	 first/old grammar: src/test/resources/xsd/simple_anonymous1.xsd
+	second/new grammar: src/test/resources/xsd/simple_anonymous2.xsd
 
 
 

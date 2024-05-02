@@ -1,7 +1,6 @@
 **** XSD COMPARISON ****
-	 old grammar: fixedValueVariant1.xsd
-	 new grammar: fixedValueVariant2.xsd
-
+	 first/old grammar: src/test/resources/xsd/fixedValueVariant1.xsd
+	second/new grammar: src/test/resources/xsd/fixedValueVariant2.xsd
 
 Modifying attribute: 
 	old: @listAgencyID{CargoOperationalCategoryCodeListAgencyIDContentType}{0..1} in type {CargoOperationalCategoryCodeType}

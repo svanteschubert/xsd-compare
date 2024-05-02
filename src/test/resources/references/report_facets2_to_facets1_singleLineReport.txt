@@ -1,7 +1,8 @@
-/MyRootElement/A1 modifying element: old: <A1>{anyType}{1..1} in type {ChoiceSequenceChange}new: <A1>{anyType}{0..1} in type {ChoiceSequenceChange} changed cardinality from 1..1 to 0..1 changed compositor from SEQUENCE to CHOICE
-/MyRootElement/A2 modifying element: old: <A2>{anyType}{0..1} in type {ChoiceSequenceChange}new: <A2>{anyType}{0..1} in type {ChoiceSequenceChange} changed compositor from SEQUENCE to CHOICE
-/MyRootElement/A3 modifying element: old: <A3>{anyType}{1..1} in type {ChoiceSequenceChange}new: <A3>{anyType}{0..1} in type {ChoiceSequenceChange} changed cardinality from 1..1 to 0..1 changed compositor from SEQUENCE to CHOICE
-/MyRootElement/A4 modifying element: old: <A4>{anyType}{0..1} in type {ChoiceSequenceChange}new: <A4>{anyType}{0..1} in type {ChoiceSequenceChange} changed compositor from SEQUENCE to CHOICE
+/MyRootElement/@orderDate removed @orderDate {date}{0..1} in type {ChoiceSequenceChangeExampleType}
+/MyRootElement/A1 modifying element: old: <A1>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}new: <A1>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType} changed cardinality from 1..1 to 0..1 changed compositor from SEQUENCE to CHOICE
+/MyRootElement/A2 modifying element: old: <A2>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}new: <A2>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType} changed compositor from SEQUENCE to CHOICE
+/MyRootElement/A3 modifying element: old: <A3>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}new: <A3>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType} changed cardinality from 1..1 to 0..1 changed compositor from SEQUENCE to CHOICE
+/MyRootElement/A4 modifying element: old: <A4>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}new: <A4>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType} changed compositor from SEQUENCE to CHOICE
 /MyRootElement0/B1 modifying element: old: <B1>{anyType}{1..1} in type {FacetsOwner0}new: <B1>{anyType}{1..1} in type {FacetsOwner0} changed compositor from SEQUENCE to ALL
 /MyRootElement0/B2 modifying element: old: <B2>{anyType}{0..1} in type {FacetsOwner0}new: <B2>{anyType}{0..1} in type {FacetsOwner0} changed compositor from SEQUENCE to ALL
 /MyRootElement0/B3 modifying element: old: <B3>{anyType}{1..1} in type {FacetsOwner0}new: <B3>{anyType}{1..1} in type {FacetsOwner0} changed compositor from SEQUENCE to ALL
@@ -23,3 +24,8 @@
 /MyRootElement2/password1 modifying element: old: <password1>{FacetsOwner2}{0..1} in type {FacetsOwner2}new: <password1>{FacetsOwner2}{0..1} in type {FacetsOwner2} changed length from 18 to 8
 /MyRootElement2/password2 modifying element: old: <password2>{FacetsOwner2}{0..1} in type {FacetsOwner2}new: <password2>{FacetsOwner2}{0..1} in type {FacetsOwner2} changed maxLength from 18 to 8 changed minLength from 15 to 5
 /MyRootElement2/sometime modifying element: old: <sometime>{FacetsOwner2}{0..1} in type {FacetsOwner2}new: <sometime>{FacetsOwner2}{0..1} in type {FacetsOwner2} changed maxLengthExclusive from 242 to 121 changed minLengthExclusive from 2 to 1
+/MyRootElement3/@max modifying attribute: old: @max{short}{0..1} in type {FacetsOwner3}new: @max{int}{0..1} in type {FacetsOwner3} changed type from short to int changed maxLengthInclusive from 32767 to 2147483647 changed minLengthInclusive from -32768 to -2147483648
+/MyRootElement3/@min added @min {int}{0..1} in type {FacetsOwner3}
+/MyRootElement3/@min2 removed @min2 {int}{0..1} in type {FacetsOwner3}
+/MyRootElement3/attributeHolderElement1 added <attributeHolderElement1> {anyType}{1..1} in type {FacetsOwner3}
+/MyRootElement3/attributeHolderElement2 removed <attributeHolderElement2> {anyType}{1..1} in type {FacetsOwner3}

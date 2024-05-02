@@ -1,7 +1,6 @@
 **** XSD COMPARISON ****
-	 old grammar: contentChange1.xsd
-	 new grammar: contentChange2.xsd
-
+	 first/old grammar: src/test/resources/xsd/contentChange1.xsd
+	second/new grammar: src/test/resources/xsd/contentChange2.xsd
 
 Added attribute @schemeAgencyID {CountryIDSchemeAgencyIDContentType}{0..1} in type {CountryIDType}
 	in ID at /OriginTradeCountry/ID/@schemeAgencyID

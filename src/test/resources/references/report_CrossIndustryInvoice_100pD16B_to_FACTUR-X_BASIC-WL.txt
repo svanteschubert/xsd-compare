@@ -1,7 +1,6 @@
 **** XSD COMPARISON ****
-	 old grammar: CrossIndustryInvoice_100pD16B.xsd
-	 new grammar: FACTUR-X_BASIC-WL.xsd
-
+	 first/old grammar: src/test/resources/xsd/EN16931/data/standard/CrossIndustryInvoice_100pD16B.xsd
+	second/new grammar: src/test/resources/xsd/factur-x/1.0.06/FACTUR-X_BASIC-WL.xsd
 
 Modifying attribute: 
 	old: @format{FormattedDateTimeFormatContentType}{0..1} in type {FormattedDateTimeType}

@@ -1,3 +1,5 @@
+.vscode/
+nb-configuration.xml
 .idea/
 target/
 build/

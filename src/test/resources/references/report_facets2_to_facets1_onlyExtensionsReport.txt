@@ -1,20 +1,20 @@
-In type {ChoiceSequenceChange} modifying element: 
-	old: <A1>{anyType}{1..1} in type {ChoiceSequenceChange}
-	new: <A1>{anyType}{0..1} in type {ChoiceSequenceChange}
+In type {ChoiceSequenceChangeExampleType} modifying element: 
+	old: <A1>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A1>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
 		Extended cardinality from 1..1 to 0..1
 		Changed compositor from SEQUENCE to CHOICE
-In type {ChoiceSequenceChange} modifying element: 
-	old: <A2>{anyType}{0..1} in type {ChoiceSequenceChange}
-	new: <A2>{anyType}{0..1} in type {ChoiceSequenceChange}
+In type {ChoiceSequenceChangeExampleType} modifying element: 
+	old: <A2>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A2>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
 		Changed compositor from SEQUENCE to CHOICE
-In type {ChoiceSequenceChange} modifying element: 
-	old: <A3>{anyType}{1..1} in type {ChoiceSequenceChange}
-	new: <A3>{anyType}{0..1} in type {ChoiceSequenceChange}
+In type {ChoiceSequenceChangeExampleType} modifying element: 
+	old: <A3>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A3>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
 		Extended cardinality from 1..1 to 0..1
 		Changed compositor from SEQUENCE to CHOICE
-In type {ChoiceSequenceChange} modifying element: 
-	old: <A4>{anyType}{0..1} in type {ChoiceSequenceChange}
-	new: <A4>{anyType}{0..1} in type {ChoiceSequenceChange}
+In type {ChoiceSequenceChangeExampleType} modifying element: 
+	old: <A4>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A4>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
 		Changed compositor from SEQUENCE to CHOICE
 In type {FacetsOwner0} modifying element: 
 	old: <B1>{anyType}{1..1} in type {FacetsOwner0}
@@ -86,3 +86,10 @@ In type {FacetsOwner2} modifying element:
 	old: <sometime>{FacetsOwner2}{0..1} in type {FacetsOwner2}
 	new: <sometime>{FacetsOwner2}{0..1} in type {FacetsOwner2}
 		Changed minExclusive from 2 to 1
+In type {FacetsOwner3} added <attributeHolderElement1> {anyType}{1..1} 
+In type {FacetsOwner3} added @min {int}{0..1} 
+In type {FacetsOwner3} modifying attribute: 
+	old: @max{short}{0..1} in type {FacetsOwner3}
+	new: @max{int}{0..1} in type {FacetsOwner3}
+		Changed maxInclusive from 32767 to 2147483647
+		Changed minInclusive from -32768 to -2147483648

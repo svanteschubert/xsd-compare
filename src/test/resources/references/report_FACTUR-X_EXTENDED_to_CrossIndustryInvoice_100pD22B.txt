@@ -1,7 +1,6 @@
 **** XSD COMPARISON ****
-	 old grammar: FACTUR-X_EXTENDED.xsd
-	 new grammar: CrossIndustryInvoice_100pD22B.xsd
-
+	 first/old grammar: src/test/resources/xsd/factur-x/1.0.06/FACTUR-X_EXTENDED.xsd
+	second/new grammar: src/test/resources/xsd/uncefact_22B/CrossIndustryInvoice_100pD22B.xsd
 
 Added attribute @characterSetCode {token}{0..1} in type {BinaryObjectType}
 	in AttachmentBinaryObject at /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/AdditionalReferencedDocument/AttachmentBinaryObject/@characterSetCode

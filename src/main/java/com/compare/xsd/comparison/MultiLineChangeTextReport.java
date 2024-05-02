@@ -5,6 +5,8 @@ import com.compare.xsd.comparison.model.ChangeType;
 import com.compare.xsd.comparison.model.xsd.XsdNode;
 import com.compare.xsd.comparison.model.xsd.impl.XsdAttribute;
 import com.compare.xsd.comparison.model.xsd.impl.XsdDocument;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import lombok.Data;
 
 import java.util.*;
@@ -31,10 +33,14 @@ public class MultiLineChangeTextReport implements TextReport {
     private int removedAttributesInTypes = 0;
     private int removedAttributesInXML = 0;
 
+    @Override
     public void addDocuments(XsdDocument oldNode, XsdDocument newNode){
+        Path absoluteXSDPath_A = Paths.get(oldNode.getFile().getAbsolutePath());
+        Path absoluteXSDPath_B = Paths.get(newNode.getFile().getAbsolutePath());        
+        Path pathBase = Paths.get(System.getProperty("user.dir"));
         reportHeader =   "**** XSD COMPARISON ****" +
-                "\n\t old grammar: " + oldNode.getName() +
-                "\n\t new grammar: " + newNode.getName() + "\n\n\n";
+                "\n\t first/old grammar: " + pathBase.relativize(absoluteXSDPath_A).toString().replace('\\', '/') +
+                "\n\tsecond/new grammar: " + pathBase.relativize(absoluteXSDPath_B).toString().replace('\\', '/') + "\n\n";
     }
 
     private String getReportHeader(){

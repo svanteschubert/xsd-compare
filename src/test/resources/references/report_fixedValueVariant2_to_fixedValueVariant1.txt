@@ -1,7 +1,6 @@
 **** XSD COMPARISON ****
-	 old grammar: fixedValueVariant2.xsd
-	 new grammar: fixedValueVariant1.xsd
-
+	 first/old grammar: src/test/resources/xsd/fixedValueVariant2.xsd
+	second/new grammar: src/test/resources/xsd/fixedValueVariant1.xsd
 
 Added attribute @listID {token}{0..1} in type {CargoOperationalCategoryCodeType}
 	in OperationalCategoryCode at /OperationalCategoryCode/@listID

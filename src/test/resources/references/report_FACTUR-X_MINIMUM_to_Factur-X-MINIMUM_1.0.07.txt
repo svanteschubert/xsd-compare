@@ -1,7 +1,6 @@
 **** XSD COMPARISON ****
-	 old grammar: FACTUR-X_MINIMUM.xsd
-	 new grammar: Factur-X-MINIMUM_1.0.07.xsd
-
+	 first/old grammar: src/test/resources/xsd/factur-x/1.0.06/FACTUR-X_MINIMUM.xsd
+	second/new grammar: src/test/resources/xsd/factur-x/Factur-X-Minimum_1.0.07_draft20240106/Factur-X-MINIMUM_1.0.07.xsd
 
 Added element <AdditionalReferencedDocument> {ReferencedDocumentType}{0..*} in type {HeaderTradeAgreementType}
 	in ApplicableHeaderTradeAgreement at /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/AdditionalReferencedDocument

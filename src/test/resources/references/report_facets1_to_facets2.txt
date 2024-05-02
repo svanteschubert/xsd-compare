@@ -1,31 +1,47 @@
 **** XSD COMPARISON ****
-	 old grammar: facets1.xsd
-	 new grammar: facets2.xsd
+	 first/old grammar: src/test/resources/xsd/facets1.xsd
+	second/new grammar: src/test/resources/xsd/facets2.xsd
 
+Added attribute @min2 {int}{0..1} in type {FacetsOwner3}
+	in MyRootElement3 at /MyRootElement3/@min2
+
+Added attribute @orderDate {date}{0..1} in type {ChoiceSequenceChangeExampleType}
+	in MyRootElement at /MyRootElement/@orderDate
+
+Added element <attributeHolderElement2> {anyType}{1..1} in type {FacetsOwner3}
+	in MyRootElement3 at /MyRootElement3/attributeHolderElement2
+
+Modifying attribute: 
+	old: @max{int}{0..1} in type {FacetsOwner3}
+	new: @max{short}{0..1} in type {FacetsOwner3}
+		Changed type from int to short
+		Changed maxLengthInclusive from 2147483647 to 32767
+		Changed minLengthInclusive from -2147483648 to -32768
+				at /MyRootElement3/@max
 
 Modifying element: 
-	old: <A1>{anyType}{0..1} in type {ChoiceSequenceChange}
-	new: <A1>{anyType}{1..1} in type {ChoiceSequenceChange}
+	old: <A1>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A1>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}
 		Changed cardinality from 0..1 to 1..1
 		Changed compositor from CHOICE to SEQUENCE
 				at /MyRootElement/A1
 
 Modifying element: 
-	old: <A2>{anyType}{0..1} in type {ChoiceSequenceChange}
-	new: <A2>{anyType}{0..1} in type {ChoiceSequenceChange}
+	old: <A2>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A2>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
 		Changed compositor from CHOICE to SEQUENCE
 				at /MyRootElement/A2
 
 Modifying element: 
-	old: <A3>{anyType}{0..1} in type {ChoiceSequenceChange}
-	new: <A3>{anyType}{1..1} in type {ChoiceSequenceChange}
+	old: <A3>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A3>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}
 		Changed cardinality from 0..1 to 1..1
 		Changed compositor from CHOICE to SEQUENCE
 				at /MyRootElement/A3
 
 Modifying element: 
-	old: <A4>{anyType}{0..1} in type {ChoiceSequenceChange}
-	new: <A4>{anyType}{0..1} in type {ChoiceSequenceChange}
+	old: <A4>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	new: <A4>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
 		Changed compositor from CHOICE to SEQUENCE
 				at /MyRootElement/A4
 
@@ -161,6 +177,12 @@ Modifying element:
 		Changed minLengthExclusive from 1 to 2
 				at /MyRootElement2/sometime
 
+Removed attribute @min {int}{0..1} in type {FacetsOwner3}
+	in MyRootElement3 at /MyRootElement3/@min
+
+Removed element <attributeHolderElement1> {anyType}{1..1} in type {FacetsOwner3}
+	in MyRootElement3 at /MyRootElement3/attributeHolderElement1
+
 
 
 **** STATISTIC ****
@@ -168,23 +190,23 @@ Modifying element:
 
 ELEMENTS:
 
-	Added elements in XSD:	0
-	Added elements in XML:	0
+	Added elements in XSD:	1
+	Added elements in XML:	1
 
 	Modified elements in XSD:	25
 	Modified elements in XML:	25
 
-	Removed elements from XSD:	0
-	Removed elements from XML:	0
+	Removed elements from XSD:	1
+	Removed elements from XML:	1
 
 
 ATTRIBUTES:
 
-	Added attributes in XSD:	0
-	Added attributes in XML:	0
+	Added attributes in XSD:	2
+	Added attributes in XML:	2
 
-	Modified attributes in XSD:	0
-	Modified attributes in XML:	0
+	Modified attributes in XSD:	1
+	Modified attributes in XML:	1
 
-	Removed attributes from XSD:	0
-	Removed attributes from XML:	0
+	Removed attributes from XSD:	1
+	Removed attributes from XML:	1
