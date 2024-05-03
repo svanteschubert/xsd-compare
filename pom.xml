@@ -316,15 +316,51 @@
             <properties>
                 <platform>windows</platform>
             </properties>
-
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>nexus</id>
+                    <name>nexus-snapshot-repository</name>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                    </snapshots>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
             <build>
                 <plugins>
                     <plugin>
                         <groupId>io.github.fvarrui</groupId>
                         <artifactId>javapackager</artifactId>
-                        <configuration>
-                            <createZipball>true</createZipball>
-                        </configuration>
+                        <version>1.7.6</version>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>package</goal>
+                                </goals>
+                                <configuration>
+                                    <!-- mandatory -->
+                                    <mainClass>com.compare.xsd.XsdCompareStarter</mainClass>
+                                    <!-- optional ->
+                                    <bundleJre>true|false</bundleJre>
+                                    <generateInstaller>true|false</generateInstaller>
+                                    <administratorRequired>true|false</administratorRequired>
+                                    <platform>auto|linux|mac|windows</platform>
+                                    <additionalResources>
+                                        <additionalResource>file path</additionalResource>
+                                        <additionalResource>folder path</additionalResource>
+                                        <additionalResource>...</additionalResource>
+                                    </additionalResources>
+                                    -->
+                                    <winConfig><createZipball>true</createZipball></winConfig>
+                                    [...]
+                                </configuration>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>
@@ -335,18 +371,58 @@
             <properties>
                 <platform>linux</platform>
             </properties>
-
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>nexus</id>
+                    <name>nexus-snapshot-repository</name>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                    </snapshots>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
             <build>
                 <plugins>
                     <plugin>
                         <groupId>io.github.fvarrui</groupId>
                         <artifactId>javapackager</artifactId>
-                        <configuration>
-                            <createTarball>true</createTarball>
-                            <linuxConfig>
-                                <generateRpm>false</generateRpm>
-                            </linuxConfig>
-                        </configuration>
+                        <version>1.7.6</version>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>package</goal>
+                                </goals>
+                                <configuration>
+                                    <!-- mandatory -->
+                                    <mainClass>com.compare.xsd.XsdCompareStarter</mainClass>
+                                    <!-- optional ->
+                                    <bundleJre>true|false</bundleJre>
+                                    <generateInstaller>true|false</generateInstaller>
+                                    <administratorRequired>true|false</administratorRequired>
+                                    <platform>auto|linux|mac|windows</platform>
+                                    <additionalResources>
+                                        <additionalResource>file path</additionalResource>
+                                        <additionalResource>folder path</additionalResource>
+                                        <additionalResource>...</additionalResource>
+                                    </additionalResources>
+                                    -->
+                                    <linuxConfig>
+                                        <createTarball>true</createTarball>
+                                        <linuxConfig>
+                                            <generateRpm>false</generateRpm>
+                                        </linuxConfig>
+                                    </linuxConfig>
+                                    <macConfig><createTarball>true</createTarball></macConfig>
+                                    <winConfig><createZipball>true</createZipball></winConfig>
+                                    [...]
+                                </configuration>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>
