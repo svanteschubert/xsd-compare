@@ -377,7 +377,7 @@ Removed element <CreditorReferenceType> {TextType}{0..*} in type {HeaderTradeSet
 Removed element <CreditorReferenceTypeCode> {CodeType}{0..*} in type {HeaderTradeSettlementType}
 	in ApplicableHeaderTradeSettlement at /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/CreditorReferenceTypeCode
 
-Removed element <DateTime> {dateTime}{0..1} in type {DateTimeType}
+Removed element <DateTime> {dateTime}{1..1} in type {DateTimeType}
 	in IssueDateTime at /CrossIndustryInvoice/ExchangedDocument/IssueDateTime/DateTime
 
 Removed element <DefinedTradeContact> {TradeContactType}{0..*} in type {TradePartyType}

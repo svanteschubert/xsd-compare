@@ -1,3 +1,4 @@
+In type {DateTimeType} added <DateTime> {dateTime}{1..1} 
 In type {ExchangedDocumentType} modifying element: 
 	old: <TypeCode>{DocumentCodeType}{1..1} in type {ExchangedDocumentType}
 	new: <TypeCode>{DocumentCodeType}{0..1} in type {ExchangedDocumentType}

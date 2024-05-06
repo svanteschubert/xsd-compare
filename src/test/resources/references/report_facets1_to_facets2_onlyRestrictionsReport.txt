@@ -1,16 +1,14 @@
 In type {ChoiceSequenceChangeExampleType} modifying element: 
-	old: <A1>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	old: <A1>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}
 	new: <A1>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}
-		Restricted cardinality from 0..1 to 1..1
 		Changed compositor from CHOICE to SEQUENCE
 In type {ChoiceSequenceChangeExampleType} modifying element: 
 	old: <A2>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
 	new: <A2>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
 		Changed compositor from CHOICE to SEQUENCE
 In type {ChoiceSequenceChangeExampleType} modifying element: 
-	old: <A3>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
+	old: <A3>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}
 	new: <A3>{anyType}{1..1} in type {ChoiceSequenceChangeExampleType}
-		Restricted cardinality from 0..1 to 1..1
 		Changed compositor from CHOICE to SEQUENCE
 In type {ChoiceSequenceChangeExampleType} modifying element: 
 	old: <A4>{anyType}{0..1} in type {ChoiceSequenceChangeExampleType}
@@ -41,46 +39,50 @@ In type {FacetsOwner1} modifying element:
 	new: <C4>{anyType}{1..1} in type {FacetsOwner1}
 		Restricted cardinality from 0..* to 1..1
 In type {FacetsOwner2} modifying element: 
-	old: <D4>{anyType}{0..*} in type {FacetsOwner2}
-	new: <D4>{anyType}{0..1} in type {FacetsOwner2}
-		Restricted cardinality from 0..* to 0..1
+	old: <D2>{anyType}{0..1} in type {FacetsOwner2}
+	new: <D2>{anyType}{1..*} in type {FacetsOwner2}
+		Restricted cardinality from 0..1 to 1..*
 In type {FacetsOwner2} modifying element: 
-	old: <Pi1>{FacetsOwner2}{0..1} in type {FacetsOwner2}
-	new: <Pi1>{FacetsOwner2}{0..1} in type {FacetsOwner2}
+	old: <D4>{anyType}{0..*} in type {FacetsOwner2}
+	new: <D4>{anyType}{1..1} in type {FacetsOwner2}
+		Restricted cardinality from 0..* to 1..1
+In type {FacetsOwner2} modifying element: 
+	old: <Pi1>{FacetsOwner2}{1..1} in type {FacetsOwner2}
+	new: <Pi1>{FacetsOwner2}{1..1} in type {FacetsOwner2}
 		Changed totalDigits from 42 to 52
 In type {FacetsOwner2} modifying element: 
-	old: <Pi2>{FacetsOwner2}{0..1} in type {FacetsOwner2}
-	new: <Pi2>{FacetsOwner2}{0..1} in type {FacetsOwner2}
+	old: <Pi2>{FacetsOwner2}{1..1} in type {FacetsOwner2}
+	new: <Pi2>{FacetsOwner2}{1..1} in type {FacetsOwner2}
 		Changed fractionDigits from 12 to 22
 In type {FacetsOwner2} modifying element: 
-	old: <address>{FacetsOwner2}{0..1} in type {FacetsOwner2}
-	new: <address>{FacetsOwner2}{0..1} in type {FacetsOwner2}
+	old: <address>{FacetsOwner2}{1..1} in type {FacetsOwner2}
+	new: <address>{FacetsOwner2}{1..1} in type {FacetsOwner2}
 		Changed whitespace from replace to preserve
 In type {FacetsOwner2} modifying element: 
-	old: <age>{FacetsOwner2}{0..1} in type {FacetsOwner2}
-	new: <age>{FacetsOwner2}{0..1} in type {FacetsOwner2}
+	old: <age>{FacetsOwner2}{1..1} in type {FacetsOwner2}
+	new: <age>{FacetsOwner2}{1..1} in type {FacetsOwner2}
 		Changed minInclusive from 0 to 1
 In type {FacetsOwner2} modifying element: 
-	old: <car>{FacetsOwner2}{0..1} in type {FacetsOwner2}
-	new: <car>{FacetsOwner2}{0..1} in type {FacetsOwner2}
+	old: <car>{FacetsOwner2}{1..1} in type {FacetsOwner2}
+	new: <car>{FacetsOwner2}{1..1} in type {FacetsOwner2}
 		Narrowed enumeration from [Audi, Golf, BMW] to [VW, Porsche, Lamborghini]
 			removed: [Audi, Golf, BMW]
 In type {FacetsOwner2} modifying element: 
-	old: <carGettingSmaller>{FacetsOwner2}{0..1} in type {FacetsOwner2}
-	new: <carGettingSmaller>{FacetsOwner2}{0..1} in type {FacetsOwner2}
+	old: <carGettingSmaller>{FacetsOwner2}{1..1} in type {FacetsOwner2}
+	new: <carGettingSmaller>{FacetsOwner2}{1..1} in type {FacetsOwner2}
 		Narrowed enumeration from [Audi, Golf, BMW, Porsche] to [Audi, Golf]
 			removed: [BMW, Porsche]
 In type {FacetsOwner2} modifying element: 
-	old: <letter>{FacetsOwner2}{0..1} in type {FacetsOwner2}
-	new: <letter>{FacetsOwner2}{0..1} in type {FacetsOwner2}
+	old: <letter>{FacetsOwner2}{1..1} in type {FacetsOwner2}
+	new: <letter>{FacetsOwner2}{1..1} in type {FacetsOwner2}
 		Changed pattern from [a-z] to ([a-z][A-Z])+
 In type {FacetsOwner2} modifying element: 
-	old: <password2>{FacetsOwner2}{0..1} in type {FacetsOwner2}
-	new: <password2>{FacetsOwner2}{0..1} in type {FacetsOwner2}
+	old: <password2>{FacetsOwner2}{1..1} in type {FacetsOwner2}
+	new: <password2>{FacetsOwner2}{1..1} in type {FacetsOwner2}
 		Changed minLength from 5 to 15
 In type {FacetsOwner2} modifying element: 
-	old: <sometime>{FacetsOwner2}{0..1} in type {FacetsOwner2}
-	new: <sometime>{FacetsOwner2}{0..1} in type {FacetsOwner2}
+	old: <sometime>{FacetsOwner2}{1..1} in type {FacetsOwner2}
+	new: <sometime>{FacetsOwner2}{1..1} in type {FacetsOwner2}
 		Changed minExclusive from 1 to 2
 In type {FacetsOwner3} added <attributeHolderElement2> {anyType}{1..1} 
 In type {FacetsOwner3} modifying attribute: 

@@ -11,7 +11,7 @@ In type {DateTimeType} modifying attribute:
 	old: @format{string}{0..1} in type {DateTimeType}
 	new: @format{string}{1..1} in type {DateTimeType}
 		Restricted cardinality from 0..1 to 1..1
-In type {DateTimeType} removed <DateTime> {dateTime}{0..1}
+In type {DateTimeType} removed <DateTime> {dateTime}{1..1}
 In type {DocumentCodeType} removed @listAgencyID {DocumentCodeListAgencyIDContentType}{0..1}
 In type {DocumentCodeType} removed @listID {token}{0..1}
 In type {DocumentCodeType} removed @listURI {anyURI}{0..1}

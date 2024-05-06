@@ -82,9 +82,6 @@ public class XsdElement extends AbstractXsdElementNode {
         this.particle = particle;
         this.minOccurrence = particle.getMinOccurs();
         this.maxOccurrence = particle.getMaxOccursUnbounded() ? null : particle.getMaxOccurs();
-        if(compositor == XSModelGroup.COMPOSITOR_CHOICE && this.minOccurrence == 1){
-            this.minOccurrence = 0;
-        }
         this.compositor = compositor;
         this.typeDefinition = this.elementDecl.getTypeDefinition();
         this.typeName = typeDefinition.getName();

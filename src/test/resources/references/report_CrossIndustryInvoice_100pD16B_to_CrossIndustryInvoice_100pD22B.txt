@@ -6534,10 +6534,9 @@ Modifying element:
 				at /CrossIndustryInvoice/SupplyChainTradeTransaction/IncludedSupplyChainTradeLineItem/SpecifiedLineTradeSettlement/SubtotalCalculatedTradeTax/CurrencyCode
 
 Modifying element: 
-	old: <DateTimeString>{DateTimeType}{0..1} in type {DateTimeType}
+	old: <DateTimeString>{DateTimeType}{1..1} in type {DateTimeType}
 	new: <DateTimeString>{DateOnlyFormattedDateTimeType}{1..1} in type {DateOnlyFormattedDateTimeType}
 		Changed type namespace from urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100 to urn:un:unece:uncefact:data:standard:QualifiedDataType:100
-		Changed cardinality from 0..1 to 1..1
 		Changed compositor from CHOICE to SEQUENCE
 				at /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeSettlementFinancialCard/ValidFromDateTime/DateTimeString
 				at /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeSettlementPaymentMeans/ApplicableTradeSettlementFinancialCard/ValidFromDateTime/DateTimeString
@@ -15735,7 +15734,7 @@ Removed attribute @unitCodeListVersionID {token}{0..1} in type {WeightUnitMeasur
 	in NetWeightMeasure at /CrossIndustryInvoice/SupplyChainTradeTransaction/IncludedSupplyChainTradeLineItem/SpecifiedLineTradeDelivery/NetWeightMeasure/@unitCodeListVersionID
 	in TheoreticalWeightMeasure at /CrossIndustryInvoice/SupplyChainTradeTransaction/IncludedSupplyChainTradeLineItem/SpecifiedLineTradeDelivery/TheoreticalWeightMeasure/@unitCodeListVersionID
 
-Removed element <DateTime> {dateTime}{0..1} in type {DateTimeType}
+Removed element <DateTime> {dateTime}{1..1} in type {DateTimeType}
 	in ValidFromDateTime at /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeSettlementFinancialCard/ValidFromDateTime/DateTime
 	in ValidFromDateTime at /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeSettlementPaymentMeans/ApplicableTradeSettlementFinancialCard/ValidFromDateTime/DateTime
 	in ValidFromDateTime at /CrossIndustryInvoice/SupplyChainTradeTransaction/IncludedSupplyChainTradeLineItem/SpecifiedLineTradeSettlement/SpecifiedTradeSettlementFinancialCard/ValidFromDateTime/DateTime

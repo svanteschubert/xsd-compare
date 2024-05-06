@@ -110,11 +110,10 @@ In type {DateOnlyFormattedDateTimeType} modifying attribute:
 	new: @format{DateOnlyFormatCodeContentType}{0..1} in type {DateOnlyFormattedDateTimeType}
 		New restriction by enumeration from [] to [2, 3, 4, 101, 102, 105, 106, 107, 110, 609]
 In type {DateOnlyFormattedDateTimeType} modifying element: 
-	old: <DateTimeString>{DateTimeType}{0..1} in type {DateTimeType}
+	old: <DateTimeString>{DateTimeType}{1..1} in type {DateTimeType}
 	new: <DateTimeString>{DateOnlyFormattedDateTimeType}{1..1} in type {DateOnlyFormattedDateTimeType}
-		Restricted cardinality from 0..1 to 1..1
 		Changed compositor from CHOICE to SEQUENCE
-In type {DateTimeType} removed <DateTime> {dateTime}{0..1}
+In type {DateTimeType} removed <DateTime> {dateTime}{1..1}
 In type {DeliveryAdjustmentType} modifying element: 
 	old: <ReasonCode>{AdjustmentReasonCodeType}{0..1} in type {DeliveryAdjustmentType}
 	new: <ReasonCode>{AdjustmentReasonCodeType}{0..1} in type {DeliveryAdjustmentType}

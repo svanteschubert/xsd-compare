@@ -13,7 +13,7 @@ In type {CodeType} modifying attribute:
 	new: @listID{token}{0..1} in type {CodeType}
 		Changed fixed default from 8155 to null
 In type {DateOnlyFormattedDateTimeType} modifying element: 
-	old: <DateTimeString>{DateTimeType}{0..1} in type {DateTimeType}
+	old: <DateTimeString>{DateTimeType}{1..1} in type {DateTimeType}
 	new: <DateTimeString>{DateOnlyFormattedDateTimeType}{1..1} in type {DateOnlyFormattedDateTimeType}
 		Changed compositor from CHOICE to SEQUENCE
 In type {DocumentLineDocumentType} added <CategoryCode> {CodeType}{0..1} 

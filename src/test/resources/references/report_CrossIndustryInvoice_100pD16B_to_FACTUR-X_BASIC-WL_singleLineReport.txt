@@ -24,7 +24,7 @@
 /CrossIndustryInvoice/ExchangedDocument/IncludedNote/SubjectCode/@listURI removed @listURI {anyURI}{0..1} in type {CodeType}
 /CrossIndustryInvoice/ExchangedDocument/IncludedNote/SubjectCode/@listVersionID removed @listVersionID {token}{0..1} in type {CodeType}
 /CrossIndustryInvoice/ExchangedDocument/IncludedNote/SubjectCode/@name removed @name {string}{0..1} in type {CodeType}
-/CrossIndustryInvoice/ExchangedDocument/IssueDateTime/DateTime removed <DateTime> {dateTime}{0..1} in type {DateTimeType}
+/CrossIndustryInvoice/ExchangedDocument/IssueDateTime/DateTime removed <DateTime> {dateTime}{1..1} in type {DateTimeType}
 /CrossIndustryInvoice/ExchangedDocument/IssueDateTime/DateTimeString/@format modifying attribute: old: @format{string}{0..1} in type {DateTimeType}new: @format{string}{1..1} in type {DateTimeType} changed cardinality from 0..1 to 1..1
 /CrossIndustryInvoice/ExchangedDocument/IssuerTradeParty removed <IssuerTradeParty> {TradePartyType}{0..1} in type {ExchangedDocumentType}
 /CrossIndustryInvoice/ExchangedDocument/LanguageID removed <LanguageID> {IDType}{0..*} in type {ExchangedDocumentType}
@@ -411,7 +411,7 @@
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeDelivery/ActualDeliverySupplyChainEvent/ID removed <ID> {IDType}{0..1} in type {SupplyChainEventType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeDelivery/ActualDeliverySupplyChainEvent/LatestOccurrenceDateTime removed <LatestOccurrenceDateTime> {DateTimeType}{0..1} in type {SupplyChainEventType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeDelivery/ActualDeliverySupplyChainEvent/OccurrenceDateTime modifying element: old: <OccurrenceDateTime>{DateTimeType}{0..1} in type {SupplyChainEventType}new: <OccurrenceDateTime>{DateTimeType}{1..1} in type {SupplyChainEventType} changed cardinality from 0..1 to 1..1
-/CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeDelivery/ActualDeliverySupplyChainEvent/OccurrenceDateTime/DateTime removed <DateTime> {dateTime}{0..1} in type {DateTimeType}
+/CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeDelivery/ActualDeliverySupplyChainEvent/OccurrenceDateTime/DateTime removed <DateTime> {dateTime}{1..1} in type {DateTimeType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeDelivery/ActualDeliverySupplyChainEvent/OccurrenceDateTime/DateTimeString/@format modifying attribute: old: @format{string}{0..1} in type {DateTimeType}new: @format{string}{1..1} in type {DateTimeType} changed cardinality from 0..1 to 1..1
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeDelivery/ActualDeliverySupplyChainEvent/OccurrenceLogisticsLocation removed <OccurrenceLogisticsLocation> {LogisticsLocationType}{0..1} in type {SupplyChainEventType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeDelivery/ActualDeliverySupplyChainEvent/OccurrenceSpecifiedPeriod removed <OccurrenceSpecifiedPeriod> {SpecifiedPeriodType}{0..1} in type {SupplyChainEventType}
@@ -599,7 +599,7 @@
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/ContinuousIndicator removed <ContinuousIndicator> {IndicatorType}{0..1} in type {SpecifiedPeriodType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/Description removed <Description> {TextType}{0..*} in type {SpecifiedPeriodType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/DurationMeasure removed <DurationMeasure> {MeasureType}{0..*} in type {SpecifiedPeriodType}
-/CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/EndDateTime/DateTime removed <DateTime> {dateTime}{0..1} in type {DateTimeType}
+/CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/EndDateTime/DateTime removed <DateTime> {dateTime}{1..1} in type {DateTimeType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/EndDateTime/DateTimeString/@format modifying attribute: old: @format{string}{0..1} in type {DateTimeType}new: @format{string}{1..1} in type {DateTimeType} changed cardinality from 0..1 to 1..1
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/ID removed <ID> {IDType}{0..1} in type {SpecifiedPeriodType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/InclusiveIndicator removed <InclusiveIndicator> {IndicatorType}{0..1} in type {SpecifiedPeriodType}
@@ -609,7 +609,7 @@
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/SeasonCode removed <SeasonCode> {CodeType}{0..1} in type {SpecifiedPeriodType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/SequenceNumeric removed <SequenceNumeric> {NumericType}{0..1} in type {SpecifiedPeriodType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/StartDateFlexibilityCode removed <StartDateFlexibilityCode> {CodeType}{0..1} in type {SpecifiedPeriodType}
-/CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/StartDateTime/DateTime removed <DateTime> {dateTime}{0..1} in type {DateTimeType}
+/CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/StartDateTime/DateTime removed <DateTime> {dateTime}{1..1} in type {DateTimeType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/BillingSpecifiedPeriod/StartDateTime/DateTimeString/@format modifying attribute: old: @format{string}{0..1} in type {DateTimeType}new: @format{string}{1..1} in type {DateTimeType} changed cardinality from 0..1 to 1..1
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/CreditReason removed <CreditReason> {TextType}{0..*} in type {HeaderTradeSettlementType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/CreditReasonCode removed <CreditReasonCode> {CodeType}{0..1} in type {HeaderTradeSettlementType}
@@ -835,7 +835,7 @@
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeAllowanceCharge/CategoryTradeTax/TypeCode/@listVersionID removed @listVersionID {token}{0..1} in type {TaxTypeCodeType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeAllowanceCharge/CategoryTradeTax/UnitBasisAmount removed <UnitBasisAmount> {AmountType}{0..*} in type {TradeTaxType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeAllowanceCharge/ChargeIndicator modifying element: old: <ChargeIndicator>{IndicatorType}{0..1} in type {TradeAllowanceChargeType}new: <ChargeIndicator>{IndicatorType}{1..1} in type {TradeAllowanceChargeType} changed cardinality from 0..1 to 1..1
-/CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeAllowanceCharge/ChargeIndicator/IndicatorString removed <IndicatorString> {null}{0..1} in type {IndicatorType}
+/CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeAllowanceCharge/ChargeIndicator/IndicatorString removed <IndicatorString> {null}{1..1} in type {IndicatorType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeAllowanceCharge/ID removed <ID> {IDType}{0..1} in type {TradeAllowanceChargeType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeAllowanceCharge/PrepaidIndicator removed <PrepaidIndicator> {IndicatorType}{0..1} in type {TradeAllowanceChargeType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradeAllowanceCharge/Reason/@languageID removed @languageID {token}{0..1} in type {TextType}
@@ -861,7 +861,7 @@
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradePaymentTerms/DirectDebitMandateID/@schemeName removed @schemeName {string}{0..1} in type {IDType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradePaymentTerms/DirectDebitMandateID/@schemeURI removed @schemeURI {anyURI}{0..1} in type {IDType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradePaymentTerms/DirectDebitMandateID/@schemeVersionID removed @schemeVersionID {token}{0..1} in type {IDType}
-/CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradePaymentTerms/DueDateDateTime/DateTime removed <DateTime> {dateTime}{0..1} in type {DateTimeType}
+/CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradePaymentTerms/DueDateDateTime/DateTime removed <DateTime> {dateTime}{1..1} in type {DateTimeType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradePaymentTerms/DueDateDateTime/DateTimeString/@format modifying attribute: old: @format{string}{0..1} in type {DateTimeType}new: @format{string}{1..1} in type {DateTimeType} changed cardinality from 0..1 to 1..1
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradePaymentTerms/FromEventCode removed <FromEventCode> {PaymentTermsEventTimeReferenceCodeType}{0..1} in type {TradePaymentTermsType}
 /CrossIndustryInvoice/SupplyChainTradeTransaction/ApplicableHeaderTradeSettlement/SpecifiedTradePaymentTerms/ID removed <ID> {PaymentTermsIDType}{0..1} in type {TradePaymentTermsType}

@@ -25,7 +25,7 @@ In type {DateTimeType} modifying attribute:
 	old: @format{string}{0..1} in type {DateTimeType}
 	new: @format{string}{1..1} in type {DateTimeType}
 		Restricted cardinality from 0..1 to 1..1
-In type {DateTimeType} removed <DateTime> {dateTime}{0..1}
+In type {DateTimeType} removed <DateTime> {dateTime}{1..1}
 In type {DebtorFinancialAccountType} modifying element: 
 	old: <IBANID>{IDType}{0..1} in type {DebtorFinancialAccountType}
 	new: <IBANID>{IDType}{1..1} in type {DebtorFinancialAccountType}
@@ -201,7 +201,7 @@ In type {IDType} removed @schemeDataURI {anyURI}{0..1}
 In type {IDType} removed @schemeName {string}{0..1}
 In type {IDType} removed @schemeURI {anyURI}{0..1}
 In type {IDType} removed @schemeVersionID {token}{0..1}
-In type {IndicatorType} removed <IndicatorString> {null}{0..1}
+In type {IndicatorType} removed <IndicatorString> {null}{1..1}
 In type {LegalOrganizationType} removed <AuthorizedLegalRegistration> {LegalRegistrationType}{0..*}
 In type {LegalOrganizationType} removed <LegalClassificationCode> {CodeType}{0..1}
 In type {LegalOrganizationType} removed <Name> {TextType}{0..1}

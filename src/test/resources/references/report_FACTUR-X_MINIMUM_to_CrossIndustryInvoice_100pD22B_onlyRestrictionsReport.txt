@@ -1,3 +1,4 @@
+In type {DateTimeType} added <DateTime> {dateTime}{1..1} 
 In type {HeaderTradeSettlementType} modifying element: 
 	old: <InvoiceCurrencyCode>{CurrencyCodeType}{1..1} in type {HeaderTradeSettlementType}
 	new: <InvoiceCurrencyCode>{CurrencyCodeType}{0..1} in type {HeaderTradeSettlementType}

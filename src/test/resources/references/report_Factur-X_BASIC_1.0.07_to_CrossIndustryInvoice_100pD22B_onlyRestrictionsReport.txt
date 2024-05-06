@@ -1,3 +1,4 @@
+In type {DateTimeType} added <DateTime> {dateTime}{1..1} 
 In type {ExchangedDocumentType} modifying element: 
 	old: <TypeCode>{DocumentCodeType}{1..1} in type {ExchangedDocumentType}
 	new: <TypeCode>{DocumentCodeType}{0..1} in type {ExchangedDocumentType}
@@ -14,6 +15,7 @@ In type {HeaderTradeSettlementType} modifying element:
 	old: <TaxCurrencyCode>{CurrencyCodeType}{0..1} in type {HeaderTradeSettlementType}
 	new: <TaxCurrencyCode>{CurrencyCodeType}{0..1} in type {HeaderTradeSettlementType}
 		New restriction by enumeration from [] to [AED, AFN, ALL, AMD, ANG, AOA, ARS, AUD, AWG, AZN, BAM, BBD, BDT, BGN, BHD, BIF, BMD, BND, BOB, BOV, BRL, BSD, BTN, BWP, BYN, BZD, CAD, CDF, CHE, CHF, CHW, CLF, CLP, CNY, COP, COU, CRC, CUC, CUP, CVE, CZK, DJF, DKK, DOP, DZD, EGP, ERN, ETB, EUR, FJD, FKP, GBP, GEL, GHS, GIP, GMD, GNF, GTQ, GYD, HKD, HNL, HRK, HTG, HUF, IDR, ILS, INR, IQD, IRR, ISK, JMD, JOD, JPY, KES, KGS, KHR, KMF, KPW, KRW, KWD, KYD, KZT, LAK, LBP, LKR, LRD, LSL, LYD, MAD, MDL, MGA, MKD, MMK, MNT, MOP, MRU, MUR, MVR, MWK, MXN, MXV, MYR, MZN, NAD, NGN, NIO, NOK, NPR, NZD, OMR, PAB, PEN, PGK, PHP, PKR, PLN, PYG, QAR, RON, RSD, RUB, RWF, SAR, SBD, SCR, SDG, SEK, SGD, SHP, SLE, SOS, SRD, SSP, STN, SVC, SYP, SZL, THB, TJS, TMT, TND, TOP, TRY, TTD, TWD, TZS, UAH, UGX, USD, USN, UYI, UYU, UYW, UZS, VED, VES, VND, VUV, WST, XAF, XAG, XAU, XBA, XBB, XBC, XBD, XCD, XDR, XOF, XPD, XPF, XPT, XSU, XTS, XUA, XXX, YER, ZAR, ZMW, ZWL]
+In type {IndicatorType} added <IndicatorString> {null}{1..1} 
 In type {ReferencedDocumentType} modifying element: 
 	old: <ReferenceTypeCode>{ReferenceCodeType}{0..1} in type {ReferencedDocumentType}
 	new: <ReferenceTypeCode>{ReferenceCodeType}{0..1} in type {ReferencedDocumentType}
