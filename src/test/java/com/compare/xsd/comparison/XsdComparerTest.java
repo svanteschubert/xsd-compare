@@ -209,11 +209,11 @@ public class XsdComparerTest {
         String result = comparer.compareAsString();
         System.out.println(result);
         // if you change the programming, update the reference by copying new result as new reference!
-        Files.writeString(Paths.get(new File(TARGET_DIR + reportName).toURI()), result, Charset.forName("UTF-8"), StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING);
+        Files.writeString(Paths.get(new File(TARGET_DIR + reportName).toURI()), result.replaceAll("\\r\\n", "\n"), Charset.forName("UTF-8"), StandardOpenOption.CREATE, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING);
         String resultReloaded = Files.readString(Paths.get(new File(TARGET_DIR + reportName).toURI()), Charset.forName("UTF-8"));
         File refFile = new File(REFERENCES_DIR + reportName);
         if(refFile.exists()) {
-            String referenceResult = Files.readString(Paths.get(refFile.toURI()), Charset.forName("UTF-8"));
+            String referenceResult = Files.readString(Paths.get(refFile.toURI()), Charset.forName("UTF-8")).replaceAll("\\r\\n", "\n");
             if(!resultReloaded.equals(referenceResult)){
                 System.err.println("\nRegression test fails as reference was different!\nNote: If the test fails due to a new output (e.g. programming update) copy the new result over the old reference:\n\t" + TARGET_DIR + reportName + "\n\t\tto" + "\n\t" + REFERENCES_DIR + reportName);
                 compareCorrect = Boolean.FALSE;
