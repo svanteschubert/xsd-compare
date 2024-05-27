@@ -35,7 +35,7 @@ public class XsdAttribute extends AbstractXsdNode implements XsdAttributeNode {
         Assert.notNull(attribute, "attribute cannot be null");
         this.attribute = attribute;
         this.maxOccurrence = 1;
-
+        this.minOccurrence = 1;
         init();
     }
 
