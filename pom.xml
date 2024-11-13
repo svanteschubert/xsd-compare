@@ -5,7 +5,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.0</version>
+        <version>3.3.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>com.xsd</groupId>
@@ -20,9 +21,9 @@
     </scm>
 
     <properties>
-        <java.version>17</java.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <java.version>21</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
 
         <spring-boot-starter-javafx.version>2.0.0</spring-boot-starter-javafx.version>
         <javafx.version>21.0.1</javafx.version>
@@ -41,12 +42,12 @@
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>2.11.0</version>
+                <version>2.17.0</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
-                <version>5.2.3</version>
+                <version>5.3.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -131,6 +132,12 @@
             <artifactId>mockito-junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <artifactId>junit</artifactId>
+            <groupId>junit</groupId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -139,12 +146,12 @@
                 <plugin>
                     <groupId>io.github.fvarrui</groupId>
                     <artifactId>javapackager</artifactId>
-                    <version>1.7.0</version>
+                    <version>1.7.6</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>3.0.0-M1</version>
+                    <version>3.1.1</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -165,7 +172,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <goals>
@@ -183,7 +190,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <version>3.5.1</version>
                 <configuration>
                     <systemPropertyVariables>
                         <!-- see https://cwiki.apache.org/confluence/display/MAVEN/Maven+Properties+Guide -->
@@ -278,7 +285,7 @@
                         </goals>
                         <configuration>
                             <mainClass>${start-class}</mainClass>
-                            <runnableJar>${project.build.directory}/xsd-compare.jar</runnableJar>
+                            <runnableJar>${project.build.directory}/xsd-compare-${project.version}-jar-with-dependencies.jar</runnableJar>
                             <bundleJre>true</bundleJre>
                             <copyDependencies>false</copyDependencies>
                             <generateInstaller>true</generateInstaller>
@@ -335,7 +342,6 @@
                     <plugin>
                         <groupId>io.github.fvarrui</groupId>
                         <artifactId>javapackager</artifactId>
-                        <version>1.7.6</version>
                         <executions>
                             <execution>
                                 <phase>package</phase>
@@ -343,9 +349,27 @@
                                     <goal>package</goal>
                                 </goals>
                                 <configuration>
-                                    <!-- mandatory -->
-                                    <mainClass>com.compare.xsd.XsdCompareStarter</mainClass>
-                                    <!-- optional ->
+                                    <mainClass>${start-class}</mainClass>
+                                    <runnableJar>${project.build.directory}/xsd-compare-${project.version}-jar-with-dependencies.jar</runnableJar>
+                                    <bundleJre>true</bundleJre>
+                                    <copyDependencies>false</copyDependencies>
+                                    <generateInstaller>true</generateInstaller>
+                                    <administratorRequired>false</administratorRequired>
+                                    <platform>auto</platform>
+                                    <customizedJre>false</customizedJre>
+                                    <name>xsd-compare</name>
+                                    <displayName>XSD Compare</displayName>
+                                    <organizationName>XSD Compare</organizationName>
+                                    <licenseFile>LICENSE</licenseFile>
+                                    <version>${project.version}</version>
+                                    <vmArgs>
+                                        <param>-Dsun.awt.disablegrab=true</param>
+                                        <param>-XX:+UseG1GC</param>
+                                    </vmArgs>
+                                </configuration>
+                                    <!-- mandatory 
+                                    <mainClass>com.compare.xsd.XsdCompareStarter</mainClass>                                    
+                                    <!- optional >
                                     <bundleJre>true|false</bundleJre>
                                     <generateInstaller>true|false</generateInstaller>
                                     <administratorRequired>true|false</administratorRequired>
@@ -355,10 +379,11 @@
                                         <additionalResource>folder path</additionalResource>
                                         <additionalResource>...</additionalResource>
                                     </additionalResources>
-                                    -->
+
                                     <winConfig><createZipball>true</createZipball></winConfig>
                                     [...]
-                                </configuration>
+
+                                </configuration>-->
                             </execution>
                         </executions>
                     </plugin>
@@ -390,7 +415,6 @@
                     <plugin>
                         <groupId>io.github.fvarrui</groupId>
                         <artifactId>javapackager</artifactId>
-                        <version>1.7.6</version>
                         <executions>
                             <execution>
                                 <phase>package</phase>
@@ -419,7 +443,7 @@
                                     </linuxConfig>
                                     <macConfig><createTarball>true</createTarball></macConfig>
                                     <winConfig><createZipball>true</createZipball></winConfig>
-                                    [...]
+                                    <!--[...]-->
                                 </configuration>
                             </execution>
                         </executions>
